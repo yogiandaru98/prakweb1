@@ -20,16 +20,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                        <a class="nav-link <?= $title == "Home" ? "active" : ""?>" href=" <?= base_url()?>/home"
+                            aria-current="page">Home
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link <?= $title == "About" ? "active" : ""?>"
+                            href="<?= base_url()?>/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/mahasiswa">Mahasiswa</a>
-                    </li>`
+                        <a class="nav-link <?= $title == "Mahasiswa" ? "active" : ""?>"
+                            href="<?= base_url()?>/mahasiswa">Mahasiswa</a>
+                    </li>
             </div>
         </div>
     </nav>
-    <h1><?= esc($title) ?>
+
+    <h1 class="p-4"><?= esc($title) ?>
     </h1>
+    <div class=" p-4">
