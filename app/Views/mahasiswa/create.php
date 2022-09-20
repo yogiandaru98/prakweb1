@@ -1,4 +1,4 @@
-<form>
+<form action="/store" method="POST" enctype="multipart/form-data">
     <div class="form-group">
         <label for="npm" class="form-label">NPM</label>
         <input name="npm" type="text" class="form-control" id="npm" aria-describedby="emailHelp">
@@ -11,6 +11,5 @@
         <label for="alamat" class="form-label">alamat</label>
         <input name="alamat" type="text" class="form-control" id="alamat" aria-describedby="emailHelp">
     </div>
-
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
 </form>
