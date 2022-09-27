@@ -1,4 +1,7 @@
-<a href="/create" type="button" class="btn btn-primary">Tambah</a>
+<?= $this->extend('templates/template') ?>
+<?= $this->section('content') ?>
+
+<a href="/create" type=" button" class="btn btn-primary">Tambah</a>
 <table class=" table table-striped">
     <thead>
         <tr>
@@ -40,3 +43,6 @@
         endforeach ?>
     </tbody>
 </table>
+
+
+<?= $this->endSection(); ?>

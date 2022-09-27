@@ -16,6 +16,7 @@ class Mahasiswa extends Seeder{
                     'npm' => $faker->unique()->numberBetween(1000000000, 9999999999),
                     'nama' => $faker->name(),
                     'alamat' => $faker->address(),
+                    'deskripsi' => $faker->text(100),
                     'created_at' => date('Y-m-d H:i:s'),
                     'updated_at' => date('Y-m-d H:i:s'),
                 ]
@@ -24,27 +25,22 @@ class Mahasiswa extends Seeder{
     }
 }
 
+
+
 // $data = [
 //     [
-
-//     'npm' => '2017051062',
-//     'nama' => 'YOGI ANDARU',
-//     'alamat' => 'Metro',
-//     'created_at'                 => date('Y-m-d H:i:s'),
-//     'updated_at'                 => '',
-// ],
-// [
-//     'npm' => '2017051061',
-//     'nama' => 'MUHAY',
-//     'alamat' => 'Bandar Lampung',
-//     'created_at'                 => date('Y-m-d H:i:s'),
-
-// ],
-// [
-//     'npm' => '2017051060',
-//     'nama' => 'JOJO',
-//     'alamat' => 'Metro',
-//     'created_at'                 => date('Y-m-d H:i:s'),
-// ]
+//         'npm' => '1234567890',
+//         'nama' => 'John Doe',
+//         'alamat' => 'Jl. Lorem Ipsum',
+//         'created_at' => date('Y-m-d H:i:s'),
+//         'updated_at' => date('Y-m-d H:i:s'),
+//     ],
+//     [
+//         'npm' => '0987654321',
+//         'nama' => 'Jane Doe',
+//         'alamat' => 'Jl. Lorem Ipsum',
+//         'created_at' => date('Y-m-d H:i:s'),
+//         'updated_at' => date('Y-m-d H:i:s'),
+//     ],
 // ];
-// (new ModelsMahasiswa())->insertBatch($data);<!-- <?php
+// (new ModelsMahasiswa())->insertBatch($data);
